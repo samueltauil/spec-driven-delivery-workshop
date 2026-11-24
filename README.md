@@ -35,6 +35,8 @@ You need:
 
 - [Workshop plan](workshop-plan.md): objectives, agenda, spacing, evaluation and risks.
 - [Facilitator guide](facilitator-guide.md): key messages, what good looks like and how to help stuck learners.
+- [Toolkit slides](docs/slides/README.md): a 15-minute introduction to OpenSpec, Gherkin, Cucumber, GitHub
+  Codespaces and GitHub Copilot to open the day, with speaker notes.
 - [Preflight checklist](preflight-checklist.md): what to check in accounts, organizations and Codespaces before the day.
 - [Exercise outlines](outlines/): the design of each exercise, including what each check proves. They contain the
   answers, so keep them out of learner repositories.
@@ -42,4 +44,6 @@ You need:
 
 ## License
 
-[MIT](LICENSE). Diagrams use [Primer Octicons](https://primer.style/octicons/), © GitHub, Inc., MIT License.
+[MIT](LICENSE). Diagrams use [Primer Octicons](https://primer.style/octicons/), © GitHub, Inc., MIT License. The
+toolkit slides include [reveal.js](https://revealjs.com/) (MIT License) and the Mona Sans fonts (SIL Open Font
+License 1.1); see the [slides README](docs/slides/README.md#credits).

@@ -47,7 +47,7 @@ graph LR
 
 | Time | Block | Facilitator does | Learners do | Checkpoint |
 | --- | --- | --- | --- | --- |
-| 0:00 | Welcome and method (20) | Frame the loop and the four human gates; verify access | Copy exercise 1, open its codespace | Everyone sees the exercise issue and a running codespace |
+| 0:00 | Welcome and toolkit (20) | Present the [toolkit slides](docs/slides/README.md) (15): the loop, the five tools and the four human gates; verify access | Copy exercise 1, open its codespace | Everyone sees the exercise issue and a running codespace |
 | 0:20 | Exercise 1 (40) | Circulate; prompt "what does this evidence not prove?" | Trace two scenarios and record a gap | Mona posts the review |
 | 1:00 | Debrief 1 (10) | Ask for unproven parts and unconfirmed capabilities | Share one gap | |
 | 1:10 | Exercise 2 (50) | Remind: write your own questions before asking Copilot | Question the epic, draft and validate an OpenSpec change | Strict validation passes |

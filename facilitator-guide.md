@@ -16,7 +16,14 @@ learners.
 - [ ] Backup plan if Copilot runs out for a learner: pair them with a neighbor. Exercises 1, 2 and 4 explain how to
       continue without Copilot; exercise 3 needs Copilot's Agent mode for steps 1 and 2.
 
-## Opening script (2 to 3 minutes)
+## Opening (20 minutes)
+
+Present the [toolkit slides](docs/slides/README.md) (about 15 minutes). Their speaker notes are the opening script:
+they cover the loop, the five tools, the four human gates, fictional data and how Mona guides each exercise.
+Rehearse once with the timer in the speaker view so you know your own pace. Then spend the last few minutes getting
+everyone into exercise 1 and checking access.
+
+If you cannot show slides, use this short script instead (2 to 3 minutes):
 
 > Today you'll take business rules through the whole delivery loop: intent, requirement, scenario, code and
 > evidence. You'll question a thin epic, deliver an approved change with Copilot, and draft a spec of your own.
