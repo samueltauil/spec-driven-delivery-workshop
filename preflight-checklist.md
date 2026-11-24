@@ -55,8 +55,9 @@ Complete at least two working days before the session. Use an account configured
       pull requests.
 - [ ] Help channel ready; helpers briefed with the [facilitator guide](facilitator-guide.md) and given the
       [exercise outlines](outlines/), which contain the answers.
-- [ ] [Toolkit slides](docs/slides/README.md) tested on the presentation setup: full screen with <kbd>F</kbd> and
-      the speaker view with <kbd>S</kbd> (allow pop-ups). Rehearse once with the speaker view timer.
+- [ ] [Toolkit slides](docs/slides/README.md) tested on the presentation setup: the speaker view with <kbd>S</kbd>
+      first (allow pop-ups), then full screen with <kbd>F</kbd> in the slides window. Rehearse once with the speaker
+      view timer.
 - [ ] Accessibility: materials shared in advance; participants told that they'll use a browser, VS Code in
       Codespaces and a terminal, so they can prepare assistive technology.
 - [ ] Backup plan documented: pairing for anyone whose codespace or Copilot is unavailable, and a local setup with

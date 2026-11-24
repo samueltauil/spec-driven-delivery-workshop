@@ -13,7 +13,17 @@ has speaker notes written to be read aloud.
 Everything the deck needs is in this folder, so it works offline and straight from a file:
 
 1. Clone the repository, or select **Code**, then **Download ZIP** on the repository page and unzip it.
-2. Open `docs/slides/index.html` in a current browser.
+2. Open `docs/slides/index.html` in Microsoft Edge or Google Chrome.
+
+In another browser, or if the speaker view does not work when you open the file, serve the folder from a local web
+server instead. From the repository folder, with Python 3 installed (use `python3` on macOS and Linux):
+
+```shell
+python -m http.server 8000 --bind 127.0.0.1 --directory docs/slides
+```
+
+Then open `http://127.0.0.1:8000` in your browser. The server only accepts connections from your own computer. Press
+<kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal to stop it after the session.
 
 To share a link instead, turn on GitHub Pages for the repository (**Settings**, then **Pages**, then
 **Deploy from a branch**, with `main` and `/ (root)`). The deck is then at
@@ -31,8 +41,15 @@ To share a link instead, turn on GitHub Pages for the repository (**Settings**, 
 | <kbd>B</kbd> or <kbd>.</kbd> | Pause with a black screen |
 | <kbd>?</kbd> | All keyboard shortcuts |
 
-If <kbd>S</kbd> opens nothing, allow pop-ups for the page and press it again. Put the speaker view on your own
-screen and the slides on the shared one.
+Open the speaker view first and move it to your own screen. Then put the slides on the shared screen and press
+<kbd>F</kbd> in the slides window to go full screen. You can move through the slides from either window.
+
+If the speaker view does not work:
+
+- **<kbd>S</kbd> opens nothing:** allow pop-ups for the page, then press <kbd>S</kbd> again. Open the deck in a
+  browser window, not in an editor preview.
+- **The speaker view opens but does not follow the slides:** close it, open the deck from a local web server as
+  described in [Open the deck](#open-the-deck), then press <kbd>S</kbd> again.
 
 Tips for the day:
 
