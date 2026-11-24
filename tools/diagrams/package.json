@@ -1,0 +1,14 @@
+{
+  "name": "spec-driven-workshop-diagrams",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Builds the workshop diagrams as PNG files in each exercise's .github/images folder.",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "dependencies": {
+    "@primer/octicons": "^19.42.0",
+    "@resvg/resvg-js": "^2.6.2"
+  }
+}

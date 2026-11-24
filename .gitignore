@@ -1,0 +1,8 @@
+# Ignore the exercise repositories: each one is its own template repository.
+/spec-driven-trace-the-loop/
+/spec-driven-find-missing-rules/
+/spec-driven-deliver-a-behavior/
+/spec-driven-first-spec/
+
+node_modules/
+tools/diagrams/preview/
