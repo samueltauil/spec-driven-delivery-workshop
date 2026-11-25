@@ -11,8 +11,9 @@ learners.
 - [ ] Help channel created in the event chat, with a pinned message that links the four exercises.
 - [ ] Links ready to share: the [workshop README](README.md), the pre-work
       ([Introduction to GitHub](https://github.com/skills/introduction-to-github)) and the survey.
-- [ ] Backup plan if Codespaces is unavailable: learners pair with a neighbor whose codespace works. Learners with
-      Node.js 22 can also clone their copy and run `npm ci` locally; every command in the exercises works there.
+- [ ] Backup plan if Codespaces is unavailable: learners work in VS Code on their own computer, set up in advance
+      with [Work in VS Code on your computer](local-setup.md); step 1 of each exercise explains how to clone the
+      copy and run `npm ci`. On the day, a learner whose computer isn't ready pairs with a neighbor.
 - [ ] Backup plan if Copilot runs out for a learner: pair them with a neighbor. Exercises 1, 2 and 4 explain how to
       continue without Copilot; exercise 3 needs Copilot's Agent mode for steps 1 and 2.
 
@@ -31,7 +32,8 @@ If you cannot show slides, use this short script instead (2 to 3 minutes):
 > member data or real work items into a prompt.
 >
 > Each exercise works the same way. You copy it, Mona opens an issue with the instructions, checks your work after
-> each step and gives you feedback in the issue. Keep the issue tab open next to your codespace.
+> each step and gives you feedback in the issue. Keep the issue tab open next to your codespace, or next to VS Code
+> if you work on your own computer.
 
 ## Per exercise
 
@@ -41,10 +43,11 @@ If you cannot show slides, use this short script instead (2 to 3 minutes):
   name what the evidence does not prove.
 - **Timing:** Start 0:20, expected median 35 minutes, cut-off 1:00.
 - **Intro (1 minute):** "A green test is evidence for something. Today's question is: for what, exactly?"
-- **Watch for:** The first codespace start (2 to 4 minutes; reassure learners). In step 2, learners who write
-  that the weekend appeal is fully proven: the scenario checks the clock and the priority, not the on-call
-  notification. In step 3, learners who search only one place: an ID is a gap only when no feature and no unit
-  test mentions it.
+- **Watch for:** The first codespace start (2 to 4 minutes; reassure learners). On learners' own computers,
+  `npm ci` errors and PowerShell blocking `npm` scripts (see [local-setup.md](local-setup.md#troubleshooting)). In
+  step 2, learners who write that the weekend appeal is fully proven: the scenario checks the clock and the
+  priority, not the on-call notification. In step 3, learners who search only one place: an ID is a gap only when
+  no feature and no unit test mentions it.
 - **Checkpoint:** Thumbs up when Mona posts step 2 (the trace is pushed).
 - **Debrief question:** "Your weekend appeal scenario is green. What would you tell your lead it does not prove,
   and who should confirm the gap?"
@@ -69,7 +72,8 @@ If you cannot show slides, use this short script instead (2 to 3 minutes):
 - **Timing:** Steps 1 and 2 from 2:30 to 3:30; steps 3 to 5 from 4:30 to 5:25. Expected median 60 to 75 minutes.
 - **Intro (1 minute):** "Copilot will write the code. Your job is to make sure it can't move the target."
 - **Watch for:**
-  - Agent mode missing from the chat box (plan or policy). Pair the learner with a neighbor.
+  - Agent mode missing from the chat box (plan, policy, or a local folder in Restricted Mode). Pair the learner
+    with a neighbor.
   - Copilot asking to run commands: learners should read each command and allow only test runs.
   - Copilot editing tests, the feature or the spec to get a pass. Ask the learner what the green result would
     prove after that edit.
@@ -102,15 +106,16 @@ If you cannot show slides, use this short script instead (2 to 3 minutes):
 | --- | --- | --- |
 | No exercise issue after copying | Actions tab of the learner's copy: did **Step 0** run? | If Actions is off, enable it. If **Step 0** failed, select it in the Actions tab, select **Enable workflow**, then **Run workflow**. Or delete the copy and copy the exercise again |
 | The codespace opened the original exercise, not the copy | Repository name on the codespace page | Use the codespace button in the learner's issue, which points to their copy |
-| The codespace won't start | Codespaces quota, policy, or an Enterprise Managed User account | Pair with a neighbor, or copy into an organization with Codespaces enabled |
-| A command says a package is missing | Did the codespace finish its setup? | Run `npm ci` in the terminal, then run the command again |
+| The codespace won't start | Codespaces quota, policy, or an Enterprise Managed User account | Pair with a neighbor, copy into an organization with Codespaces enabled, or work in VS Code on the learner's computer with [local-setup.md](local-setup.md) |
+| A command says a package is missing | Did the codespace finish its setup? On a local computer, did `npm ci` run in the exercise folder? | Run `npm ci` in the terminal, then run the command again |
+| On a local computer, `npm`, `npx` or `git push` fails | The error message | Follow the matching entry in [Troubleshooting](local-setup.md#troubleshooting) |
 | No chat icon, or Copilot asks to sign in | Copilot icon in the Status Bar | Sign in with the GitHub account that has Copilot |
 | Copilot stops answering or says the limit is reached | Learner's Copilot plan | Follow the step's hint; pair with a neighbor for exercise 3 |
 | Mona does not respond | Did the action match the step's trigger (branch, file path, event)? | Repeat the action exactly as instructed; see the step's **Mona did not respond** hint |
 | Failed results table | Read the failed rows and tips | Fix and repeat the triggering action |
 | Exercise 3, step 3 takes several minutes | The **CI** check on the pull request | Wait for CI; Mona grades after it finishes |
 | Exercise 3, step 3: CI is green, but Mona's CI row is ❌ | Did CI take longer than 5 minutes? | Edit the pull request description and select **Update comment**; Mona checks again |
-| Exercise 3, step 4 archive didn't wait for an answer | Where the command ran | Run it in the codespace terminal, not through Copilot Chat |
+| Exercise 3, step 4 archive didn't wait for an answer | Where the command ran | Run it in the editor's terminal, not through Copilot Chat |
 | "Action not allowed" in a run | Organization Actions allowlist | Ask the admin to allow the actions listed in the [preflight checklist](preflight-checklist.md) |
 | Repository name taken | Shared organization | Add a suffix, such as initials, to the repository name |
 

@@ -12,7 +12,8 @@
 - **Copyright holder:** acworkma
 - **Series:** Spec-Driven Delivery workshop, exercise 2 of 4. Previous: Trace the Loop from Intent to Evidence.
   Next: Deliver an Approved Behavior with Copilot.
-- **Environment:** GitHub Codespaces (Node.js 22 and the OpenSpec CLI preinstalled), Copilot Chat
+- **Environment:** GitHub Codespaces (Node.js 22 and the OpenSpec CLI preinstalled), or VS Code on the learner's
+  computer with Node.js 22.12 or later and `npm ci` (see `local-setup.md`); Copilot Chat
 - **exercise-toolkit version:** v0.9.3
 
 ## Learner
@@ -172,7 +173,8 @@ pull request.
 - **Walkthrough personas:** product owner with no terminal experience; developer skimmer.
 - **Negative tests:** 4 questions only; requirement without MUST; requirement without scenario; change folder
   misnamed; gap row with empty "Caught by"; added requirement name not in the spec, not in its gap's row, or the worked example.
-- **Environments to test:** personal account, Codespaces, Copilot Free.
+- **Environments to test:** personal account, Codespaces, Copilot Free; VS Code on Windows (PowerShell) and macOS
+  without Codespaces.
 
 ## Risks and open questions
 

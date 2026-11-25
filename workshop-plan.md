@@ -12,7 +12,8 @@
   sittings of about 35 to 75 minutes.
 - **Environment:** Personal GitHub accounts (or a learning organization) with GitHub Codespaces. Each exercise
   opens a ready-to-use codespace with Node.js 22, the GitHub CLI, the pinned OpenSpec CLI and, in exercises 1 and 3,
-  Cucumber.js already installed.
+  Cucumber.js already installed. Learners who can't use Codespaces work in VS Code on their own computer instead,
+  set up with [Work in VS Code on your computer](local-setup.md).
 
 **Principle used throughout:** AI drafts; humans decide. Every exercise uses fictional organizations
 (Contoso, Fabrikam, Northwind, Proseware) and synthetic data only.
@@ -20,7 +21,8 @@
 ## Prerequisites and pre-work
 
 - A GitHub account that can create public repositories and use GitHub Codespaces (personal accounts include a
-  monthly free Codespaces allowance).
+  monthly free Codespaces allowance). Without Codespaces: VS Code 1.116 or later, Git and Node.js 22.12 or later on
+  the learner's computer, set up before the day with [Work in VS Code on your computer](local-setup.md).
 - Access to GitHub Copilot Chat in VS Code. Copilot Free works, but its monthly allowance is limited and the full
   day uses many prompts; every exercise explains how to continue without Copilot except the implementation in
   exercise 3.
@@ -47,7 +49,7 @@ graph LR
 
 | Time | Block | Facilitator does | Learners do | Checkpoint |
 | --- | --- | --- | --- | --- |
-| 0:00 | Welcome and toolkit (20) | Present the [toolkit slides](docs/slides/README.md) (15): the loop, the five tools and the four human gates; verify access | Copy exercise 1, open its codespace | Everyone sees the exercise issue and a running codespace |
+| 0:00 | Welcome and toolkit (20) | Present the [toolkit slides](docs/slides/README.md) (15): the loop, the five tools and the four human gates; verify access | Copy exercise 1, open its codespace (or clone it in VS Code) | Everyone sees the exercise issue and a running codespace |
 | 0:20 | Exercise 1 (40) | Circulate; prompt "what does this evidence not prove?" | Trace two scenarios and record a gap | Mona posts the review |
 | 1:00 | Debrief 1 (10) | Ask for unproven parts and unconfirmed capabilities | Share one gap | |
 | 1:10 | Exercise 2 (50) | Remind: write your own questions before asking Copilot | Question the epic, draft and validate an OpenSpec change | Strict validation passes |
@@ -96,7 +98,7 @@ See [preflight-checklist.md](preflight-checklist.md). Owner: workshop lead.
 
 | Risk | Mitigation |
 | --- | --- |
-| Codespaces quota or policy blocks a learner | Pair them with a neighbor; the exercises also run locally with Node.js 22 and `npm ci` |
+| Codespaces quota or policy blocks a learner | The learner works in VS Code on their own computer, set up with [local-setup.md](local-setup.md); step 1 of each exercise explains how. If their computer isn't ready, pair them with a neighbor |
 | Copilot output varies between learners | No check depends on Copilot's wording; checks grade files, validation and tests |
 | Learners treat self-merge as approval | Exercise 3 states that a solo learner cannot independently approve their own pull request; facilitators pair learners as reviewers |
 | Organization Actions allowlist blocks the toolkit | Run the preflight with a participant-like account; exercise 3 uses `wait-for-workflow`, which is not on the EMU strict allowlist at `v0.9.3` |

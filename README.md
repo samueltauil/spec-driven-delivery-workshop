@@ -9,7 +9,8 @@ automated evidence, and decide honestly whether their next problem is ready to b
 ## The exercises
 
 Take them in order. Each one runs in its own repository, with a ready-to-use [GitHub Codespaces](https://docs.github.com/en/codespaces/overview)
-environment and step-by-step guidance from Mona in an issue.
+environment and step-by-step guidance from Mona in an issue. If you can't use Codespaces, you can do every exercise in
+VS Code on your own computer: see [Work in VS Code on your computer](local-setup.md).
 
 | # | Exercise | You will | Time |
 | --- | --- | --- | --- |
@@ -25,7 +26,10 @@ for everyday work. Only exercise 3 changes code, and Copilot does most of that w
 
 You need:
 
-- A GitHub account that can create public repositories and use GitHub Codespaces. Personal accounts include monthly free usage.
+- A GitHub account that can create public repositories.
+- GitHub Codespaces, which personal accounts can use with a monthly free allowance. Or, if you can't use Codespaces,
+  VS Code 1.116 or later, Git and Node.js 22.12 or later on your own computer: see
+  [Work in VS Code on your computer](local-setup.md).
 - [GitHub Copilot](https://github.com/features/copilot) with Copilot Chat. Copilot Free works, but its monthly allowance is limited, and the full
   workshop uses many prompts. A paid plan avoids running out partway through.
 - Comfort with branches, commits and pull requests. If they are new to you, start with
@@ -38,6 +42,7 @@ You need:
 - [Toolkit slides](docs/slides/README.md): a 15-minute introduction to OpenSpec, Gherkin, Cucumber, GitHub
   Codespaces and GitHub Copilot to open the day, with speaker notes.
 - [Preflight checklist](preflight-checklist.md): what to check in accounts, organizations and Codespaces before the day.
+- [Work in VS Code on your computer](local-setup.md): prerequisites and setup for learners who can't use Codespaces.
 - [Exercise outlines](outlines/): the design of each exercise, including what each check proves. They contain the
   answers, so keep them out of learner repositories.
 - [Diagram tool](tools/diagrams/README.md): rebuilds the illustrations used in the exercises.

@@ -12,8 +12,9 @@
 - **Copyright holder:** acworkma
 - **Series:** Spec-Driven Delivery workshop, exercise 3 of 4. Previous: Find the Missing Rules Before You Build.
   Next: Draft Your First Spec.
-- **Environment:** GitHub Codespaces (Node.js 22, Cucumber.js and the OpenSpec CLI preinstalled), Copilot Chat in
-  Ask and Agent modes, the GitHub web UI for the pull request
+- **Environment:** GitHub Codespaces (Node.js 22, Cucumber.js and the OpenSpec CLI preinstalled), or VS Code on the
+  learner's computer with Node.js 22.12 or later and `npm ci` (see `local-setup.md`); Copilot Chat in Ask and Agent
+  modes; the GitHub web UI for the pull request
 - **exercise-toolkit version:** v0.9.3
 
 ## Learner
@@ -241,7 +242,8 @@ approval; the exercise lets it happen so the loop can close. Image: `delivery-fl
 - **Negative tests:** plan or tests missing an ID; no `Reviewed by:` value; no test file; stub left in place;
   feature or step definitions edited; spec delta edited; test IDs removed; change not archived; archived twice;
   CRLF line endings; PR body without IDs or limits; CI failing.
-- **Environments to test:** personal account, Codespaces, Copilot Free (Agent mode available).
+- **Environments to test:** personal account, Codespaces, Copilot Free (Agent mode available); VS Code on Windows
+  (PowerShell) and macOS without Codespaces.
 
 ## Risks and open questions
 
@@ -249,7 +251,7 @@ approval; the exercise lets it happen so the loop can close. Image: `delivery-fl
 - The CI wait adds up to five minutes to step 3; the checking-work comment stays visible meanwhile.
 - `skills/exercise-toolkit/actions/wait-for-workflow` is not on some enterprise allowlists; an EMU variant would
   poll with `actions/github-script` instead.
-- The archive date uses the codespace clock (UTC); the check accepts any date.
+- The archive date uses the codespace or computer clock; the check accepts any date.
 - Live Copilot UI labels and the CI timing are unverified until a walkthrough test.
 
 ## Future considerations

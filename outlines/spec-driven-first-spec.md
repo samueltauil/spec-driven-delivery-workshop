@@ -12,7 +12,8 @@
 - **Copyright holder:** acworkma
 - **Series:** Spec-Driven Delivery workshop, exercise 4 of 4. Previous: Deliver an Approved Behavior with
   Copilot. Next: none (the learner runs the loop on a real backlog item with their team).
-- **Environment:** GitHub Codespaces (Node.js 22 and the OpenSpec CLI preinstalled), Copilot Chat
+- **Environment:** GitHub Codespaces (Node.js 22 and the OpenSpec CLI preinstalled), or VS Code on the learner's
+  computer with Node.js 22.12 or later and `npm ci` (see `local-setup.md`); Copilot Chat
 - **exercise-toolkit version:** v0.9.3
 
 ## Learner
@@ -218,7 +219,8 @@ decision owners and missing items; fill a measures row; validate and push.
 - **Negative tests:** step 1 with two change folders, or with the skeleton pasted unchanged; step 2 with a
   requirement without MUST, or only two scenarios; step 3 with no decision line, "ready / not ready" left in, an
   empty measures cell, or CRLF line endings.
-- **Environments to test:** personal account, Codespaces free allowance, Copilot Free.
+- **Environments to test:** personal account, Codespaces free allowance, Copilot Free; VS Code on Windows
+  (PowerShell) and macOS without Codespaces.
 
 ## Risks and open questions
 

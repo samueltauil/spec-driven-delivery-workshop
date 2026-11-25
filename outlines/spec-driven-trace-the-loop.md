@@ -11,7 +11,8 @@
 - **Target owner:** samueltauil
 - **Copyright holder:** acworkma
 - **Series:** Spec-Driven Delivery workshop, exercise 1 of 4. Next: Find the Missing Rules Before You Build.
-- **Environment:** GitHub Codespaces (Node.js 22, Cucumber.js and the OpenSpec CLI preinstalled), Copilot Chat
+- **Environment:** GitHub Codespaces (Node.js 22, Cucumber.js and the OpenSpec CLI preinstalled), or VS Code on the
+  learner's computer with Node.js 22.12 or later and `npm ci` (see `local-setup.md`); Copilot Chat
 - **exercise-toolkit version:** v0.9.3
 
 ## Learner
@@ -191,7 +192,8 @@ test files; verify one yourself; fill the Gaps section, including an unconfirmed
 - **Walkthrough personas:** literal novice (product owner, never used a terminal), experienced skimmer (developer).
 - **Negative tests:** step 1 push without the requirement ID; step 2 "Not proven" left blank; step 3 naming an
   automated ID (`003-US1-AS1`).
-- **Environments to test:** personal account, Codespaces free allowance, Copilot Free.
+- **Environments to test:** personal account, Codespaces free allowance, Copilot Free; VS Code on Windows
+  (PowerShell) and macOS without Codespaces.
 
 ## Risks and open questions
 
